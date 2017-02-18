@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About me</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--Ensure correct behavior in older browsers-->
+	<style>header, section, footer, aside, nav, main, article, figure {display: block; }</style>
+
+	<style type="text/css">
+		html, body {
+		    height: 100%;
+		    min-width: 320px;
+		}
+		html, body{
+			max-width: 750px;
+			margin: auto;
+		}
+		.smallpadding{
+			padding: 5px;
+		}
+		.menu{
+			position: fixed;
+			z-index: 99;
+		}
+		.top-hr{
+			margin-top: 55px;
+		}
+		hr {
+		    border: 0;
+		    height: 1px;
+		    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		function menuScroll(target) {
+		    target_offset = $(target).offset(),
+		    target_top = target_offset.top - 95;
+		    $('html, body').animate({
+		        scrollTop: target_top
+		    }, 1000);
+		}
+
+	</script>
+</head>
+<body>
+
+
+	<br>
+
+	<div class="container-fluid menu" align="center">
+		<div class="row">
+			<div class="col-md-1 cold-sm-1 col-xs-1"></div>
+			<div class="col-md-2 cold-sm-2 col-xs-2">
+				<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#aboutme');" style="width:100px">ABOUT ME</button>
+			</div>
+			<div class="col-md-2 cold-sm-2 col-xs-2">
+				<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#education');" style="width:100px">EDUCATION</button>
+			</div>
+			<div class="col-md-2 cold-sm-2 col-xs-2">
+				<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#work');" style="width:100px">WORK</button>
+			</div>
+			<div class="col-md-2 cold-sm-2 col-xs-2">
+				<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#skills');" style="width:100px">SKILLS</button>
+			</div>
+			<div class="col-md-2 cold-sm-2 col-xs-2">
+				<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#hobbies');" style="width:100px">HOBBIES</button>
+			</div>
+			<div class="col-md-1 cold-sm-1 col-xs-1"></div>
+		</div>
+	</div>
+
+	
+	<hr id="aboutme" class="top-hr style-five"/>
+
+
+	<div align="center"><H2>ABOUT ME</H2></div>
+
+
+	<hr/><br><br><br><hr/>
+
+
+	<div id="education" align="center"><H2>EDUCATION</H2></div>
+
+
+	<hr/><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>AALTO</H3>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+
+
+	<br><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>STANFORD</H3>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+
+
+	<br><br><br><hr/>
+
+
+	<div id="work" align="center"><H2>WORK EXPERIENCE</H2></div>
+
+
+	<hr/><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>WORK</small><span class="smallpadding"/>|<span class="smallpadding"/>ABB</H3>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+
+
+	<br><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>WORK</small><span class="smallpadding"/>|<span class="smallpadding"/>IKEA</H3>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
+
+
+	<br><br><br><hr/>
+
+
+	<div id="skills" align="center"><H2>SKILLS</H2></div>
+
+
+	<hr/><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>SKILLS</small><span class="smallpadding"/>|<span class="smallpadding"/>LANGUAGES</H3>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+		<div class="row language">
+			<div class="col-md-1"></div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<H3><small>FINNISH</small></H3>
+				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/fi.svg" alt="fiflag">
+				<H5><small>NATIVE</small></H5>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<H3><small>ENGLISH</small></H3>
+				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" alt="usflag">
+				<H5><small>FLUENT</small></H5>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<H3><small>SWEDISH</small></H3>
+				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg" alt="swflag">
+				<H5><small>A2</small></H5>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<H3><small>SPANISH</small></H3>
+				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/es.svg" alt="spflag">
+				<H5><small>A1</small></H5>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<H3><small>JAPANESE</small></H3>
+				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/jp.svg" alt="jpflag">
+				<H5><small>BEGINNER</small></H5>
+			</div>
+		</div>
+	</div>
+
+
+	<br><br><br>
+
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-8 col-sm-8 col-xs-12">
+				<H3><small>SKILLS</small><span class="smallpadding"/>|<span class="smallpadding"/>PROGRAMMING</H3>
+
+
+				<br><br>
+
+
+			</div>
+			<div class="col-md-4 col-xs-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-4">
+				<H4 style="margin-top:-6%;"><small>HTML</small></H4>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-4"></div>
+			<div class="col-md-4 col-xs-8"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>CSS</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2"></div>
+			<div class="col-md-4 col-xs-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>BOOTSTRAP</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>JAVASCRIPT</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>PYTHON</small></H4></div>
+			<div class="col-md-4 col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>SWIFT</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>C</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-4"></div>
+			<div class="col-sm-4 col-xs-8"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>DJANGO</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-2"></div>
+			<div class="col-sm-4 col-xs-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>MATLAB</small></H4></div>
+			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-2"></div>
+			<div class="col-sm-4 col-xs-4"></div>
+		</div>
+	</div>
+
+
+	<br><br><br><hr/>
+
+
+	<div id="hobbies" align="center"><H2>HOBBIES</H2></div>
+
+
+	<hr/>
+
+
+	<div class="container-fluid hobbies" align="center">
+		
+
+		<br>
+
+
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<H3><small>HOBBIES</small><span class="smallpadding"/>|<span class="smallpadding"/>SNOWBOARDING</H3>
+				<H4 style="font-size: 20px"><small>Actually, snowboarding has become more of a lifestyle than just a hobby for me during the past year. I started snowboarding shortly after I joined <a href="http://www.skipoli.fi">Skipoli</a>, which is a skiing/snowboarding club at my home university, and immediately fell in love with it. Currently, I'm in the board of Skipoli as the vice president for season 16/17.</small></H4>
+			</div>
+			<div class="col-sm-4 col-md-4 col-xs-6">
+				<img src="cloudyportrait.jpg" class="img-circle img-responsive" alt="cloudyportrait" width="200" height="200">
+			</div>
+			<div class="col-sm-4 col-md-4 col-xs-6">
+				<img src="friendlylift.jpg" class="img-circle img-responsive" alt="friendlylift" width="200" height="200">
+			</div>
+			<div class="col-sm-8 col-md-8">
+				<H4 style="font-size: 20px; padding-top: 7%;"><small>I've made many new friends while snowboarding on various trips at different places. Very good friends from Skipoli and also a lot of friends from other universities skiing and snowboarding clubs. I love trips organized by other clubs as well as Skipolis trips, since I love meeting new people with the same passion in snow.</small></H4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8">
+				<H4 style="font-size: 20px; padding-top: 5%;""><small>Snowboarding is a sport where you drive yourself to try out new things all the time! And as you go for new achievements, falling over and over again is inevitable. I have fallen countless of times and haven't remained without some injuries. But that's the nature of the sport and nothing can take away my joy for snowboarding!</small></H4>
+			</div>
+			<div class="col-xs-3"></div>
+			<div class="col-sm-4 col-xs-6">
+				<img src="luxation.jpg" class="img-circle img-responsive" alt="luxation" width="200" height="200">
+			</div>
+			<div class="col-xs-3"></div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
