@@ -38,3 +38,14 @@ Commit a09a4a7f847133692e227f2d1b916c93b5714711
 		8. Navigation button stays in a selected state after click
 		9. Language proficiency font is too small
 ------------
+Version 0.03
+Commit e2475b45bb4d0ae02203d698f94fc847dc5bca3a
+20.2.2017
+------------
+	Functional issues:
+		1. Navigator not stacking properly with mobilephone screen sizes
+		2. Navigation scroll has offset when menu is stacked
+	Design issues:
+		4. Languages too wide apart each other when they stack on smaller screen sizes
+		7. Margin around hobbies images is too small with small screen sizes
+		8. Navigation button stays in a selected state after click

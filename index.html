@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About me</title>
+	<title>Antero Erävuori</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -36,16 +36,22 @@
 		    height: 1px;
 		    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 		}
-
 		.btn {
 		        margin-bottom: 3px;
 		    }
 		@media screen and (max-width: 649px) {
 		    .btn {
-		        width: 80px;
-		        font-size: 10px;
+		        width: 94px;
+		        font-size: 12px;
 		        margin-bottom: 3px;
 		    }
+		    .top-hr{
+				margin-top: 90px;
+			}
+			.language{
+				margin-left: 15%;
+				margin-right: 15%;
+			}
 		}
 		@media screen and (min-width: 650px) {
 		    .btn {
@@ -53,17 +59,24 @@
 		        margin-bottom: 3px;
 		    }
 		}
-
 	</style>
 
 	<script type="text/javascript">
 
 		function menuScroll(target) {
-		    target_offset = $(target).offset(),
-		    target_top = target_offset.top - 95;
-		    $('html, body').animate({
-		        scrollTop: target_top
-		    }, 1000);
+			if ($("body").width() < 614) {
+			    target_offset = $(target).offset(),
+			    target_top = target_offset.top - 125;
+			    $('html, body').animate({
+			        scrollTop: target_top
+			    }, 1000);
+			} else {
+				target_offset = $(target).offset(),
+			    target_top = target_offset.top - 95;
+			    $('html, body').animate({
+			        scrollTop: target_top
+			    }, 1000);
+			}
 		}
 
 	</script>
@@ -75,7 +88,7 @@
 
 	<div class="menu">
 		<div class="container-fluid" align="center">
-			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#aboutme');">ANTERO</button>
+			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#aboutme');">TOP</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#education');">EDUCATION</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#work');">WORK</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#skills');">SKILLS</button>
@@ -87,14 +100,21 @@
 	<hr id="aboutme" class="top-hr style-five"/>
 
 
-	<div align="center"><H2>ABOUT ME</H2></div>
+	<div align="center"><H2>ANTERO ERÄVUORI</H2></div>
 
 
 	<hr/><br>
 
-
-	<img src="profile.jpg" class="img-circle" alt="profile" width="200">
-
+	<div class="row">
+		<div class="col-xs-3 hidden-sm hidden-md"></div>
+		<div class="col-md-4 col-sm-4 col-xs-6">
+			<br class="hidden-xs"><br class="hidden-xs">
+			<img src="profile.jpg" class="img-circle" alt="profile" width="200">
+		</div>
+		<div class="col-md-8 col-sm-8 col-xs-12" align="center">
+			<H3><small>I'm a 23 year old engineering student from Finland. I have a very diverce interest in various fields of technology and a desire to be able to create new technology. I'm very interested in product development, embedded systems and software development to mention a few. I'm good at working with teams and individually and I also like to have personal responsibilities and challenges. New things won't scare me and I take everything in with curiosity and without preconceptions. Sustainability and environmental awareness have started to form a very big importance for me, and I believe those values are going to guide my future studies as well.</small></H3>
+		</div>
+	</div>
 
 	<br><br><br><br><hr/>
 
@@ -108,29 +128,72 @@
 	<div class="container-fluid skills" align="center">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
-				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>AALTO</H3>
+				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>AALTO UNIVERSITY</H3>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+
+
+		<div class="row hidden">
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom:-2%;">
+				<H4>Master of Science</H4>
+				<H4><small>9| </small>2016 – current</H4>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-top:-2%;">
+				<H3><small>Major<span class="smallpadding"/>|<span class="smallpadding"/>Translational Engineering<br>Minor<span class="smallpadding"/>|<span class="smallpadding"/>Health and Wellbeing</small></H3></div>
+			<div class="col-md-6 col-sm-6 col-xs-12"></div>
+		</div>
+
+
+
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom:-2%;">
+				<H4>Bachelor of Science</H4>
+				<H4><small>9| </small>2012 – <small>CURRENT</H4>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-top:-2%;">
+				<H3><small>Major<span class="smallpadding"/>|<span class="smallpadding"/>Automation and Systems Technology<br>Minor<span class="smallpadding"/>|<span class="smallpadding"/>Computer Science</small></H3></div>
+			<div class="col-md-6 col-sm-6 col-xs-12"></div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<H3><small>I started my studies in Aalto on fall 2012 and went to do military service on the next spring. After that I practically started my studies over on fall 2013. I was very interested about a wide variety of studies offered in my university and went to see what the interesting courses had to offer. I remained on my original studypath major, Automation and Systems Technology, and finally decided to have Computer Science as my minor. I also attended many courses outside my major and minor to find out my own thing in the studies. I left many of the extra courses unfinished and focused on the important ones for me, however I got myself an introduction to various interesting topics outside my own field of studies.</small></H3>
+			</div>
 		</div>
 	</div>
 
 
-	<br><br><br>
+	<br><br>
 
 
 	<div class="container-fluid skills" align="center">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-12">
-				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>STANFORD</H3>
+				<H3><small>EDUCATION</small><span class="smallpadding"/>|<span class="smallpadding"/>STANFORD UNIVERSITY</H3>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12"></div>
 		</div>
 
+		<br>
 
 		<div class="row">
-		<div class="col-md-12 hidden">
-			<H4 style="font-size: 20px;"><small>In 2015, I was one of the few people who got the unique chance to attend to Stanford University for the summer. <a href="https://summer.stanford.edu/programs/ihp/">SSIHP</a></small></H4>
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom:-2%;">
+				<H4>Stanford Summer School</H4>
+				<H4>2015</H4>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12" style="margin-top:-2%;">
+				<H3><small>Program<span class="smallpadding"/>|<span class="smallpadding"/>Stanford Summer International Honors<br>Studies<span class="smallpadding"/>|<span class="smallpadding"/>Technology Entrepreneurship</small></H3></div>
+			<div class="col-md-6 col-sm-6 col-xs-12"></div>
 		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<H3><small>In 2015, I was one of the few people who got the unique chance to attend the Stanford University for the summer in the Stanford Summer International Honors Program (<a href="https://summer.stanford.edu/programs/ihp/">SSIHP</a>). It is a program where students from all around the world are invited to experience the Stanford University and Silicon Valley with an international student community. At Stanford I studied courses with a focus around technological entrepreneurship. I learned important skills especially in working within international teams and environments as well as product development skills. My mindset was also strongly affected during this time and my way of thinking became more entrepreneurial, open minded and curious towards international matters.</small></H3>
+			</div>
 		</div>
 	</div>
 
@@ -146,23 +209,47 @@
 
 	<div class="container-fluid skills" align="center">
 		<div class="row">
-			<div class="col-md-8 col-sm-8 col-xs-12">
+			<div class="col-md-4 col-sm-4 col-xs-12">
 				<H3><small>WORK</small><span class="smallpadding"/>|<span class="smallpadding"/>ABB</H3>
+				<br>
+				<H4>Testing trainee</H4>
+				<H4><small>10| </small>2015 – <small>8| </small>2016</H4>
+				<br>
+				<H4><small>11 months</small></H4>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-8 col-sm-8 col-xs-12"> <H3><small>I was a testing trainee within the product development of high power electric drives. The work mainly included electrical testing of the prototype products as well as some hands on tasks related to the testing. During my internship in this position I got an understanding of how big scale product development works in practise and how many different factors and tasks are included and affect the product development processes in practise.</small></H3></div>
 		</div>
 	</div>
 
-
 	<br><br>
-
 
 	<div class="container-fluid skills" align="center">
 		<div class="row">
-			<div class="col-md-8 col-sm-8 col-xs-12">
+			<div class="col-md-4 col-sm-4 col-xs-12">
 				<H3><small>WORK</small><span class="smallpadding"/>|<span class="smallpadding"/>IKEA</H3>
+				<br>
+				<H4>Sales co-worker</H4>
+				<H4><small>9| </small>2013 – <small>6| </small>2015</H4>
+				<br>
+				<H4><small>1 year 10 months</small></H4>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-8 col-sm-8 col-xs-12"> <H3><small>I worked as a salesman in the self service storage and helped the customers to find the products they wanted. I also had responsibilities in keeping the storage clean, making sure that the shelves were filled appropriately every day as well as preparing sales locations for new products. One of my tasks was also to directly sell products as well as additional services provided for the customers. There were also some special tasks during events. I learned to work in a constantly changing environment with a lot of variation in the work tasks.</small></H3></div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="container-fluid skills" align="center">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<H3><small>WORK</small><span class="smallpadding"/>|<span class="smallpadding"/>LINNANMÄKI</H3>
+				<br>
+				<H4>Ride operator</H4>
+				<H4><small>5| </small>2012 – <small>10| </small>2012</H4>
+				<br>
+				<H4><small>6 months</small></H4>
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-12"> <H3><small>I worked as a ride operator at the Linnanmäki amusement park in Helsinki. My job was to operate the various small rides of the amusement park and also a few big rides which required a special operating and safety training. I was also responsible for checking the customers tickets and of cource customer service within the amusement park was also one of the important tasks. Especially, I learned the importance of responsibility in safety critical work.</small></H3></div>
 		</div>
 	</div>
 
@@ -178,34 +265,39 @@
 
 	<div class="container-fluid skills" align="center">
 		<div class="row">
-			<div class="col-md-8 col-sm-8 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<H3><small>SKILLS</small><span class="smallpadding"/>|<span class="smallpadding"/>LANGUAGES</H3>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-6 col-sm-6 hidden-xs"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<H3><small>I'm a native Finnish speaker and I'm also fluent in both written and spoken English. I have enough speaking skills in Swedish to be engaded into casual everyday discussions. I'm also studying Spanish and Japanese at the moment. I have a lot of Spanish speaking friends so I'm studying it mainly for personal reasons. And Japanese because I'm interested in the culture and I think of Japan as one of the interesting and innovative technology locations in the world.</small></H3>
+			</div>
 		</div>
 		<div class="row language">
-			<div class="col-md-1"></div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-md-1 col-sm-1 col-xs-3"></div>
+			<div class="col-md-2 col-sm-2 col-xs-6">
 				<H3><small>FINNISH</small></H3>
 				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/fi.svg" alt="fiflag">
 				<H4><small>NATIVE</small></H4>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-md-2 col-sm-2 col-xs-6">
 				<H3><small>ENGLISH</small></H3>
 				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" alt="usflag">
 				<H4><small>FLUENT</small></H4>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-md-2 col-sm-2 col-xs-6">
 				<H3><small>SWEDISH</small></H3>
 				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/se.svg" alt="swflag">
 				<H4><small>A2</small></H4>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-md-2 col-sm-2 col-xs-6">
 				<H3><small>SPANISH</small></H3>
 				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/es.svg" alt="spflag">
 				<H4><small>A1</small></H4>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-6">
+			<div class="col-md-2 col-sm-2 col-xs-6">
 				<H3><small>JAPANESE</small></H3>
 				<img style="height: 30px; width:auto;" src="https://lipis.github.io/flag-icon-css/flags/4x3/jp.svg" alt="jpflag">
 				<H4><small>BEGINNER</small></H4>
@@ -226,7 +318,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<H3><small>I have a good command of the basic web development languages and I'm also familiar with some web development frameworks like Django as well as dealing with Databases. In addition to web development skills, I am also very confident with coding in Python. I know the basics of C programming and also have some practical experience in programming embedded devices with C. I'm constantly trying to develop my skills within the languages I'm already familiar with, but I like to learn about new languages also. Lately I've gotten interest in making mobile applications and started to study Swift programming during my freetime.</small></H3>
+				<H3><small>I have a good command of the basic web development languages and I'm also familiar with some web development frameworks like Django as well as dealing with Databases. In addition to web development skills, I am also very confident with coding in Python. I know the basics of C programming and also have some practical experience in programming embedded devices with C. I'm constantly trying to develop my skills within the languages I'm already familiar with, but I like to learn about new languages also. I'm also familiar and very interested about the concepts of software engineering. Lately I've gotten interest in making mobile applications and started to study Swift programming language and iOS app development during my freetime.</small></H3>
 			</div>
 		</div>
 
@@ -234,102 +326,99 @@
 		<br>
 		<br>
 
+		<div class="row">
+			<div class="col-md-6 col-xs-12">
+				<H5 style="padding-bottom: 5%;">CORE KNOWLEDGE</H5>
+			</div>
+		</div>
 
 		<div class="row">
 			<div class="col-md-2 col-sm-2 col-xs-4">
-				<H4 style="margin-top:-6%;"><small>HTML</small></H4>
+				<H4 style="margin-top:-3%;"><small>HTML</small></H4>
+				<H4 style="padding-top:15px;"><small>CSS</small></H4>
+				<H4 style="padding-top:11px;"><small>BOOTSTRAP</small></H4>
+				<H4 style="padding-top:11px;"><small>PYTHON</small></H4>
+				<H4 style="padding-top:11px;"><small>C</small></H4>
+				<H4 style="padding-top:11px;"><small>DJANGO</small></H4>
+				<H4 style="padding-top:11px;"><small>MATLAB</small></H4>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-8">
 				<div class="progress">
 		 			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-				</div>
-			</div>
-			<div class="col-md-2 col-xs-4"></div>
-			<div class="col-md-4 col-xs-8"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>CSS</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
-				<div class="progress">
+		 		</div>
+		 		<div class="progress">
 		 			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 				</div>
-			</div>
-			<div class="col-md-6 col-xs-6"><H5 class="hidden-xs" style="margin-top:-1%;">CURRENT LEARNING FOCUS</div></H5>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>BOOTSTRAP</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
 				<div class="progress">
 		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
 				</div>
-			</div>
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>JAVASCRIPT</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
-				<div class="progress">
-		 			<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2 col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>PYTHON</small></H4></div>
-			<div class="col-md-4 col-sm-4 col-xs-8">
 				<div class="progress">
 		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
 				</div>
-			</div>
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>SWIFT</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
-				<div class="progress">
-		 			<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>C</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
 				<div class="progress">
 		 			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
 				</div>
-			</div>
-			<div class="col-sm-2 col-xs-4"></div>
-			<div class="col-sm-4 col-xs-8"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>DJANGO</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
+				<div class="progress">
+		 			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+				</div>
 				<div class="progress">
 		 			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
 				</div>
 			</div>
-			<div class="col-sm-2 col-xs-2"></div>
-			<div class="col-sm-4 col-xs-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 col-xs-4"><H4 style="margin-top:-6%;"><small>MATLAB</small></H4></div>
-			<div class="col-sm-4 col-xs-8">
-				<div class="progress">
-		 			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+
+				<br>
+				<br>
+				<br class="hidden-xs">
+
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<H5 style="margin-top:-1%;">CURRENT LEARNING FOCUS</H5>
+					</div>
+					<br><br>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<H4 style="margin-top:-3%;"><small>JAVASCRIPT</small></H4>
+						<H4 style="padding-top:15px;"><small>SWIFT</small></H4>
+					</div>
+					<div class="col-md-8 col-xs-8">
+						<div class="progress">
+		 					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+						</div>
+						<div class="progress">
+				 			<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+						</div>
+					</div>	
 				</div>
 			</div>
-			<div class="col-sm-2 col-xs-2"></div>
-			<div class="col-sm-4 col-xs-4"></div>
 		</div>
-	</div>
 
 
+		<br><br>
 
-	<div class="container-fluid skills" align="center">
 		<div class="row">
-			<div class="col-md-8 col-sm-8 col-xs-12 hidden">
-				<H3><small>SKILLS</small><span class="smallpadding"/>|<span class="smallpadding"/>ADDITIONAL</H3>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<H5 style="margin-top:-1%;">ADDITIONAL EXPERIENCE WITH</div></H5>
 			</div>
 		</div>
+		<div style="width: 100%;" class="row">
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>XML</small></H3></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>Git</small></H3></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>SQlite</small></H3></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>Solid Edge</small></H3></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>Xcode</small></H3></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>Sublime Text</small></H3></div>
+			<div class="col-md-2 hidden-xs col-sm-2"></div>
+			<div class="col-md-2 col-sm-2 col-xs-4" style="text-align: center;"><H3><small>jQuery</small></H3></div>
+			<div class="col-md-3 col-sm-3 col-xs-4" style="text-align: center;"><H3><small>Unit testing</small></H3></div>
+			<div class="col-md-3 col-sm-3 col-xs-4" style="text-align: center;"><H3><small>PLC</small></H3></div>
+		</div>
+
 	</div>
 
-	<br>
-	<br>
-
-	<br><br><br><hr/>
+	<br><br><br><br><hr/>
 
 
 	<div id="hobbies" align="center"><H2>HOBBIES</H2></div>
@@ -342,12 +431,14 @@
 		
 
 		<br>
-
-
 		<div class="row">
 			<div class="col-sm-8 col-md-8 col-xs-12">
 				<H3><small>HOBBIES</small><span class="smallpadding"/>|<span class="smallpadding"/>SNOWBOARDING</H3>
-				<H4 style="font-size: 20px"><small>Actually, snowboarding has become more of a lifestyle than just a hobby for me during the past year. I started snowboarding shortly after I joined <a href="http://www.skipoli.fi">Skipoli</a>, which is a skiing/snowboarding club at my home university, and immediately fell in love with it. Currently, I'm in the board of Skipoli as the vice president for season 16/17.</small></H4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<H4 style="font-size: 21px; padding-top:5%;"><small>Actually, snowboarding has become more of a lifestyle than just a hobby for me during the past year. I started snowboarding shortly after I joined <a href="http://www.skipoli.fi">Skipoli</a>, which is a skiing/snowboarding club at my home university, and immediately fell in love with it. Currently, I'm in the board of Skipoli as the vice president for season 16/17.</small></H4>
 			</div>
 			<div class="col-sm-4 col-md-4 col-xs-6">
 				<img src="cloudyportrait.jpg" class="img-circle img-responsive" alt="cloudyportrait" width="200" height="200">
@@ -356,12 +447,12 @@
 				<img src="friendlylift.JPG" class="img-circle img-responsive" alt="friendlylift" width="200" height="200">
 			</div>
 			<div class="col-sm-8 col-md-8">
-				<H4 style="font-size: 20px; padding-top: 7%;"><small>I've made many new friends while snowboarding on various trips at different places. Very good friends from Skipoli and also a lot of friends from other universities skiing and snowboarding clubs. I love trips organized by other clubs as well as Skipolis trips, since I love meeting new people with the same passion in snow.</small></H4>
+				<H4 style="font-size: 21px; padding-top: 7%;"><small>I've made many new friends while snowboarding on various trips at different places. Very good friends from Skipoli and also a lot of friends from other universities skiing and snowboarding clubs. I love trips organized by other clubs as well as Skipolis trips, since I love meeting new people with the same passion in snow.</small></H4>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<H4 style="font-size: 20px; padding-top: 5%;""><small>Snowboarding is a sport where you drive yourself to try out new things all the time! And as you go for new achievements, falling over and over again is inevitable. I have fallen countless of times and haven't remained without some injuries. But that's the nature of the sport and nothing can take away my joy for snowboarding!</small></H4>
+				<H4 style="font-size: 21px; padding-top: 5%;""><small>Snowboarding is a sport where you drive yourself to try out new things all the time! And as you go for new achievements, falling over and over again is inevitable. I have fallen countless of times and haven't remained without some injuries. But that's the nature of the sport and nothing can take away my joy for snowboarding!</small></H4>
 			</div>
 			<div class="col-xs-3"></div>
 			<div class="col-sm-4 col-xs-6">
@@ -369,33 +460,57 @@
 			</div>
 			<div class="col-xs-3"></div>
 		</div>
+
+		<br>
+		<br class="hidden-sm hidden-md">
+		<br class="hidden-sm hidden-md">
+
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<H3><small>HOBBIES</small><span class="smallpadding"/>|<span class="smallpadding"/>BOULDERING</H3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<H4 style="font-size: 21px; padding-top: 5%;"><small>Bouldering is the second of my two favorite sports. First I started with indoor top-rope, but I'm much more into bouldering nowadays. It is a very physical sport and also a very social one, despite of ultimately being an individual sport. You are never alone in a bouldering gym and you can always confidently ask for some advice from someone better.</small></H4>
+				<br class="hidden-xs">
+			</div>
+			<div class="col-sm-4 col-md-4 col-xs-6">
+				<img src="boulderwall.jpg" class="img-circle img-responsive" alt="boulderwall" width="200" height="200">
+			</div>
+			<div class="col-sm-4 col-md-4 col-xs-6">
+				<img src="boulderhand.jpg" class="img-circle img-responsive" alt="boulderhand" width="200" height="200">
+			</div>
+			<div class="col-sm-8 col-md-8 col-xs-12">
+				<H4 style="font-size: 21px; padding-top:4%;"><small>Bouldering challenges you to surpass yourself every time with new problems. The bouldering routes are called problems, because bouldering actually includes a very menral side for the sport and you need to plan ahead before wasting your power. There might be a very clever trick to solve some problems, and the feeling you get from finally figuring it out is the best there is.</small></H4>
+			</div>
+		</div>
+
+
 	</div>
 
 	<br><br>
 
-	<hr style="margin-top: 25%"/>
+	<hr style="margin-top: 40%"/>
 
 
-	<div id="contact" class="container-fluid contact" align="center">
+	<div id="contact" class="container-fluid contact" align="center" style="margin-bottom:35%;">
 
 
-	<br>
+		<br>
 
+		<H2>CONTACT INFORMATION</H2>
 
-	<div id="hobbies" align="center"><H2>CONTACT INFORMATION</H2></div>
+		<br>
 
+		<H4><small>NAME</small><span class="smallpadding"/>|<span class="smallpadding"/>Antero Erävuori</H4>
+		<H4><small>PHONE</small><span class="smallpadding"/>|<span class="smallpadding"/>+358440545406</H4>
+		<H4><small>EMAIL</small><span class="smallpadding"/>|<span class="smallpadding"/>antero.eravuori@gmail.com</H4>
 
-	<br>
+		<br>
+		<hr/>
+	</div>
 
-	<H4><small>NAME</small><span class="smallpadding"/>|<span class="smallpadding"/>Antero Erävuori</H4>
-	<H4><small>PHONE</small><span class="smallpadding"/>|<span class="smallpadding"/>+358440545406</H4>
-	<H4><small>EMAIL</small><span class="smallpadding"/>|<span class="smallpadding"/>antero.eravuori@gmail.com</H4>
-
-
-	<br>
-
-
-	<hr style="margin-bottom: 40%"/>
 
 
 </body>
