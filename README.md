@@ -46,6 +46,17 @@ Commit e2475b45bb4d0ae02203d698f94fc847dc5bca3a
 		1. Navigator not stacking properly with mobilephone screen sizes
 		2. Navigation scroll has offset when menu is stacked
 	Design issues:
-		4. Languages too wide apart each other when they stack on smaller screen sizes
-		7. Margin around hobbies images is too small with small screen sizes
-		8. Navigation button stays in a selected state after click
+		3. Languages too wide apart each other when they stack on smaller screen sizes
+		4. Margin around hobbies images is too small with small screen sizes
+		5. Navigation button stays in a selected state after click
+------------
+Version 0.04
+Commit a880d2fa6af2ebd36cd8371efaa6b4ba2cb49c1e
+3.3.2017
+------------
+	Functional issues:
+		1. Introduction section is displayed wrongly with wide desktop sizes
+			-> Immediate fix
+		2. Contact information section doesnt have padding with mobilephone screen sizes
+			-> Immediate fix
+------------
