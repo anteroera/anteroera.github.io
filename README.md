@@ -72,3 +72,14 @@ Commit 8346739e57cb0aa5678ef6de1abd30221c31d757
 		4. Syntax is not validated
 		5. Images are oversized (memory)
 ------------
+Version 0.06
+Commit 853f3c6dd597193b9a43555b72551d657706c8c9
+4.3.2017
+------------
+	Functional issues:
+		1. Additional experiences not aligned properly
+	Design issues:
+		2. Navigation button stays in a selected state after click
+		3. Languages too close to each other with small screen size
+------------
+
