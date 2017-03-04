@@ -60,3 +60,15 @@ Commit a880d2fa6af2ebd36cd8371efaa6b4ba2cb49c1e
 		2. Contact information section doesnt have padding with mobilephone screen sizes
 			-> Immediate fix
 ------------
+Version 0.05
+Commit 8346739e57cb0aa5678ef6de1abd30221c31d757
+3.3.2017
+------------
+	Design issues:
+		1. Margin around hobbies images is too small with small screen sizes
+		2. Navigation button stays in a selected state after click
+		3. Profile image is offset with small screen sizes
+	Other issues:
+		4. Syntax is not validated
+		5. Images are oversized (memory)
+------------
