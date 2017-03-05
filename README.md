@@ -82,4 +82,9 @@ Commit 853f3c6dd597193b9a43555b72551d657706c8c9
 		2. Navigation button stays in a selected state after click
 		3. Languages too close to each other with small screen size
 ------------
-
+Version 0.07
+Commit 390fda6176cf76780121d7c268a3d724290df358
+4.3.2017
+------------
+	N/A
+------------
