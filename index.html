@@ -85,6 +85,30 @@
 			}
 		}
 
+
+		$(document).ready(function(){
+    		$("#intro").load("content-blocks/intro.html");
+		});
+
+
+/*
+		function load_education() {
+			$("#education").load("../content-blocks/education.html");
+		}
+		function load_work() {
+			$("#work").load("../content-blocks/work.html");
+		}
+		function load_skills() {
+			$("#skills").load("../content-blocks/skills.html");
+		}
+		function load_hobbies() {
+			$("#hobbies").load("../content-blocks/hobbies.html");
+		}
+		function load_contact() {
+			$("#contact").load("../content-blocks/contact.html");
+		}
+*/
+
 	</script>
 </head>
 <body>
@@ -103,26 +127,7 @@
 		</div>
 	</div>
 	
-	<hr id="aboutme" class="top-hr style-five"/>
-
-
-	<div style="text-align:center;"><H2>ANTERO ERÄVUORI</H2></div>
-
-
-	<hr/><br>
-
-	<div class="container-fluid about" style="text-align:center;">
-		<div class="row">
-			<div class="col-xs-2 hidden-sm hidden-md hidden-lg"></div>
-			<div class="col-md-4 col-sm-4 col-xs-8">
-				<br class="hidden-xs"><br class="hidden-xs">
-				<img src="profile.jpg" style="margin-left: auto; margin-right: auto;" class="img-circle" alt="profile" width="200">
-			</div>
-			<div class="col-md-8 col-sm-8 col-xs-12" style="text-align:center;">
-				<H3><small>I'm a 24 year old engineering student from Finland, and I'm studying Automation and Systems Technology. I'm interested in many fields of technology and I have a desire to be able to create new technology. I'm very interested in product development, embedded systems and software development to mention a few. I'm good at working with teams and individually and I also like to have personal responsibilities and challenges. New things won't scare me and I take everything in with curiosity and without preconceptions. Sustainability and environmental awareness are very important for me, and I believe those values are going to guide my future studies as well.</small></H3>
-			</div>
-		</div>
-	</div>
+	<div id="intro"></div>
 
 	<br><br><br><br><hr/>
 
