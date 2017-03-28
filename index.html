@@ -28,9 +28,6 @@
 			position: fixed;
 			z-index: 99;
 		}
-		.top-hr{
-			margin-top: 55px;
-		}
 		hr {
 		    border: 0;
 		    height: 1px;
@@ -52,23 +49,16 @@
 				margin-left: 12.5%;
 				margin-right: 12.5%;
 			}
-			.contact-fill{
-				height: 30%;
-			}
 		}
 		@media screen and (min-width: 650px) {
 		    .btn {
 		        width: 100px;
 		        margin-bottom: 3px;
 		    }
-			.contact-fill{
-				height: 30%;
-			}
 		}
 	</style>
 
 	<script type="text/javascript">
-
 		function menuScroll(target) {
 			if ($("body").width() < 614) {
 			    target_offset = $(target).offset(),
@@ -85,7 +75,6 @@
 			}
 		}
 
-
 		$(document).ready(function(){
     		$("#intro").load("content-blocks/intro.html");
     		$("#education").load("content-blocks/education.html");
@@ -94,36 +83,12 @@
     		$("#hobbies").load("content-blocks/hobbies.html");
     		$("#contact").load("content-blocks/contact.html");
 		});
-
-
-/*
-		function load_education() {
-			$("#education").load("../content-blocks/education.html");
-		}
-		function load_work() {
-			$("#work").load("../content-blocks/work.html");
-		}
-		function load_skills() {
-			$("#skills").load("../content-blocks/skills.html");
-		}
-		function load_hobbies() {
-			$("#hobbies").load("../content-blocks/hobbies.html");
-		}
-		function load_contact() {
-			$("#contact").load("../content-blocks/contact.html");
-		}
-*/
-
 	</script>
 </head>
 <body>
-
-
-	<br>
-
 	<div class="menu">
 		<div class="container-fluid" style="text-align:center;">
-			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#aboutme');">TOP</button>
+			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#intro');">TOP</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#education');">EDUCATION</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#work');">WORK</button>
 			<button type="button" class="btn btn-default btn-md" onclick="menuScroll('#skills');">SKILLS</button>
@@ -132,19 +97,16 @@
 		</div>
 	</div>
 	
-	<div id="intro"></div>
-	<br><br><br>
-	<div id="education"></div>
-	<br><br><br>
-	<div id="work"></div>
-	<br><br><br>
-	<div id="skills"></div>
-	<br><br><br>
-	<div id="hobbies"></div>
-	<div class="contact-fill"></div>
-	<div id="contact"></div>
-	<div class="contact-fill"></div>
+	<div id="intro" class="content-block"></div>
 
-
+	<div id="education" class="content-block"></div>
+	
+	<div id="work" class="content-block"></div>
+	
+	<div id="skills" class="content-block"></div>
+	
+	<div id="hobbies" class="content-block"></div>
+	
+	<div id="contact" class="content-block"></div>
 </body>
 </html>
