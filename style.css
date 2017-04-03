@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    min-width: 320px;
+    max-width: 750px;
+	margin: auto;
+}
+.menu{
+	top: 20px;
+	width: 100%;
+	min-width: 320px;
+	max-width: 750px;
+	position: fixed;
+	z-index: 99;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.smallpadding{
+	padding: 5px;
+}
+.filler-general{
+	height: 55px;
+}
+.keyword{
+	text-align: center;
+}
+.skills{
+	text-align:center;
+}
+.flag{
+	height: 30px; 
+	width:auto;
+}
+.education{
+	text-align:center;
+}
+.intro{
+	text-align:center;
+}
+.work{
+	text-align:center;
+}
+.contact{
+	text-align:center;
+}
+.filler-contact{
+	height: 33%;
+}
+.btn {
+        margin-bottom: 3px;
+    }
+@media screen and (max-width: 649px) {
+    .btn {
+        width: 94px;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .top-hr{
+		margin-top: 90px;
+	}
+	.language{
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+	}
+}
+@media screen and (min-width: 650px) {
+    .btn {
+        width: 100px;
+        margin-bottom: 3px;
+    }
+}
