@@ -11,53 +11,10 @@
 	<!--Ensure correct behavior in older browsers-->
 	<style>header, section, footer, aside, nav, main, article, figure {display: block; }</style>
 
-	<style type="text/css">
-		html, body {
-		    height: 100%;
-		    min-width: 320px;
-		    max-width: 750px;
-			margin: auto;
-		}
-		.smallpadding{
-			padding: 5px;
-		}
-		.menu{
-			width: 100%;
-			min-width: 320px;
-			max-width: 750px;
-			position: fixed;
-			z-index: 99;
-		}
-		hr {
-		    border: 0;
-		    height: 1px;
-		    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-		}
-		.btn {
-		        margin-bottom: 3px;
-		    }
-		@media screen and (max-width: 649px) {
-		    .btn {
-		        width: 94px;
-		        font-size: 12px;
-		        margin-bottom: 3px;
-		    }
-		    .top-hr{
-				margin-top: 90px;
-			}
-			.language{
-				margin-left: 12.5%;
-				margin-right: 12.5%;
-			}
-		}
-		@media screen and (min-width: 650px) {
-		    .btn {
-		        width: 100px;
-		        margin-bottom: 3px;
-		    }
-		}
-	</style>
+	<!--Main style sheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<!--Main scripts-->
 	<script type="text/javascript">
 		function menuScroll(target) {
 			if ($("body").width() < 614) {
@@ -97,16 +54,18 @@
 		</div>
 	</div>
 	
+	<div class="filler-general"></div>
 	<div id="intro" class="content-block"></div>
-
+	<div class="filler-general"></div>
 	<div id="education" class="content-block"></div>
-	
+	<div class="filler-general"></div>
 	<div id="work" class="content-block"></div>
-	
+	<div class="filler-general"></div>
 	<div id="skills" class="content-block"></div>
-	
+	<div class="filler-general"></div>
 	<div id="hobbies" class="content-block"></div>
-	
+	<div class="filler-contact"></div>
 	<div id="contact" class="content-block"></div>
+	<div class="filler-contact"></div>
 </body>
 </html>
