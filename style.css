@@ -45,6 +45,9 @@ hr {
 .contact{
 	text-align:center;
 }
+.filler-top{
+	height: 55px;
+}
 .filler-contact{
 	height: 33%;
 }
@@ -57,12 +60,12 @@ hr {
         font-size: 12px;
         margin-bottom: 3px;
     }
-    .top-hr{
-		margin-top: 90px;
-	}
 	.language{
 		margin-left: 12.5%;
 		margin-right: 12.5%;
+	}
+	.filler-top{
+		height: 85px;
 	}
 }
 @media screen and (min-width: 650px) {
